@@ -12,8 +12,8 @@ import os
 #vs = VideoStream(src=0).start()
 # vs = VideoStream(usePiCamera=True).start()
 vs = cv2.VideoCapture(-1)
-vs.set(cv2.CAP_PROP_FRAME_WIDTH, 480)
-vs.set(cv2.CAP_PROP_FRAME_HEIGHT, 270)
+#vs.set(cv2.CAP_PROP_FRAME_WIDTH, 480)
+#vs.set(cv2.CAP_PROP_FRAME_HEIGHT, 270)
 
 time.sleep(1.0)
 i = 0                           # Image sequence
