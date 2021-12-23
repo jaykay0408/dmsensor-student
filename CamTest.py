@@ -2,21 +2,19 @@
 # python CamTest.py
 
 # import the necessary packages
-from imutils.video import VideoStream
 import numpy as np
 import imutils
 import time
 import cv2
 import os
 
-vs = VideoStream(src=0).start()
-# vs = VideoStream(usePiCamera=True).start()
+vs = cv2.VideoCapture(-1)
 time.sleep(2.0)
 
 # loop over the frames from the video stream
 while True:
     # grab the frame from video stream
-    frame = vs.read()
+    ret, frame = vs.read()
 
     # Add your code HERE
 
@@ -29,4 +27,4 @@ while True:
         break
 
 cv2.destroyAllWindows()
-vs.stop()
+vs.release()
