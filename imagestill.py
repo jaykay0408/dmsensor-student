@@ -2,15 +2,12 @@
 # python imagestill.py
 
 # import the necessary packages
-from imutils.video import VideoStream
 import numpy as np
 import imutils
 import time
 import cv2
 import os
 
-#vs = VideoStream(src=0).start()
-# vs = VideoStream(usePiCamera=True).start()
 vs = cv2.VideoCapture(-1)
 #vs.set(cv2.CAP_PROP_FRAME_WIDTH, 480)
 #vs.set(cv2.CAP_PROP_FRAME_HEIGHT, 270)
@@ -39,4 +36,4 @@ while True:
         i += 1
 
 cv2.destroyAllWindows()
-vs.stop()
+vs.release()
