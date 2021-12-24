@@ -30,7 +30,7 @@ while True:
 
     # if the `s` key was pressed, save current image
     if key == ord("s"):
-        filename = "test" + str(i) + ".png"
+        filename = "test" + str(i) + ".jpg"
         cv2.imwrite("./data/" + filename, frame)
         print(filename + " is saved.")
         i += 1
